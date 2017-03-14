@@ -1,3 +1,9 @@
+package deviceMarket.Console;
+
+import deviceMarket.Clients;
+import deviceMarket.Devices;
+import deviceMarket.Sales;
+
 import java.util.Scanner;
 
 /**

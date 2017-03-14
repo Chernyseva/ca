@@ -1,3 +1,7 @@
+package deviceMarket;
+
+import deviceMarket.Item.Sale;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;

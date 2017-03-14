@@ -1,3 +1,7 @@
+package deviceMarket;
+
+import deviceMarket.Item.Device;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -28,7 +32,7 @@ public class Devices implements Items {
 
     public static Device find(String model){
         for (Device d : devices) {
-            if (d.model.equals(model)){
+            if (d.getModel().equals(model)){
                 return d;
             }
         }

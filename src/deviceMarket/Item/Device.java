@@ -1,3 +1,6 @@
+package deviceMarket.Item;
+
+import deviceMarket.Type;
 import javafx.scene.paint.Color;
 
 import java.sql.Date;
@@ -18,7 +21,7 @@ public class Device {
         return new Device();
     }*/
 
-    Device(String[] str) {
+    public Device(String[] str) {
         type = Type.valueOf(str[0]);
         brand = str[1];
         model = str[2];
@@ -39,5 +42,9 @@ public class Device {
 
     public float getPrice() {
         return price;
+    }
+
+    public String getModel(){
+        return model;
     }
 }

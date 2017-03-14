@@ -1,3 +1,5 @@
+package deviceMarket.Item;
+
 import java.sql.Date;
 
 /**
@@ -7,7 +9,7 @@ public class Client {
     String name;
     Date date;
 
-    Client(String[] str) {
+    public Client(String[] str) {
         name = str[0];
         date = Date.valueOf(str[1]);
     }
@@ -20,6 +22,10 @@ public class Client {
     ;
 
     public String shortInfo() {
+        return name;
+    }
+
+    public String getName() {
         return name;
     }
 }

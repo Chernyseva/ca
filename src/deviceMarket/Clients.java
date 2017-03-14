@@ -1,3 +1,7 @@
+package deviceMarket;
+
+import deviceMarket.Item.Client;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -28,7 +32,7 @@ public class Clients implements Items {
 
     public static Client find(String name) {
         for (Client c : clients) {
-            if (c.name.equals(name)) {
+            if (c.getName().equals(name)) {
                 return c;
             }
         }

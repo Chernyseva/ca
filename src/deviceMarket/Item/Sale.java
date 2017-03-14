@@ -1,3 +1,10 @@
+package deviceMarket.Item;
+
+import deviceMarket.Clients;
+import deviceMarket.Devices;
+import deviceMarket.Item.Client;
+import deviceMarket.Item.Device;
+
 import java.sql.Date;
 import java.util.HashMap;
 import java.util.Map;
@@ -10,7 +17,7 @@ public class Sale {
     Map<Device, Integer> items = new HashMap<>();
     Date date;
 
-    Sale(String[] str) {
+    public Sale(String[] str) {
         client = Clients.find(str[0]);
         date = Date.valueOf(str[1]);
         for (int i = 2; i + 1 <= str.length; i++) {
